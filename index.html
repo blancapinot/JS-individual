@@ -15,8 +15,14 @@
 
 </head>
 
-<body>
-  
+<body id="myID">
+  <button onClick="Mycolor()">Change Color</button>
+<script type='text/javascript'>
+function Mycolor() {
+var element = document.getElementById("myID");
+element.style.backgroundColor=random_color();
+}
+</script>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Fundación laPinot</a>
     <button

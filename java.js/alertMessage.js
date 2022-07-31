@@ -1,10 +1,12 @@
 window.alert("Bienvenido a nuestro sitio web");
-function generarNuevoColor(){
-	let color;
-	color = "#E8347D";
-	}
-
-	document.body.style.background = color;
-	document.getElementById("hexadecimal").innerHTML = color;
-	
+	function random_color() {
+		const letters = '0123456789ABCDEF'.split('');
+		let color = '#';
+	  
+		for (let i = 0; i < 6; i++) {
+		  color += letters[Math.round(Math.random() * 15)];
+		}
+		
+		return color;
+	  }
 
